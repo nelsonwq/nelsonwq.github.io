@@ -1,0 +1,1545 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="数学建模入门, 软件工程 博客 算法 软件开发 Java">
+    <meta name="description" content="学习博客 | 记录学习 | 记录生活 | 有道无术，术尚可求 有术无道，止于术">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>数学建模入门 | Codingqiang</title>
+    <link rel="icon" type="image/png" href="../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/my.css">
+
+    <script src="../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+
+<style>
+    body{
+       background-image: url(/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+    <style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1500); 
+        },500);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+</script>
+
+ 
+
+<body>
+    <div class="stars-con">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>  
+      </div>
+  
+    
+        <div id="loading-container">
+            <p class="loading-text">嘘~  正在从服务器偷取页面 . . . </p> 
+            <div class="loading-image">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> 
+                <div></div>
+            </div>
+        </div>
+    
+
+    <!-- 弹出文字 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write(
+                    '<script type="text/javascript" src="../../../libs/others/popupText.js"><\/script>'
+                );
+            }
+        </script>
+    
+
+       <!-- 自定义标题 -->
+       
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write(
+                    '<script type="text/javascript" src="../../../libs/others/title.js"><\/script>'
+                );
+            }
+        </script>
+    
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Codingqiang</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友链</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>自传</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Codingqiang</div>
+        <div class="logo-desc">
+            
+            学习博客 | 记录学习 | 记录生活 | 有道无术，术尚可求 有术无道，止于术
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友链
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			自传
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/nelsonwq" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/nelsonwq" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">数学建模入门</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="../../../tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                                <span class="chip bg-color">数学建模</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="../../../categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" class="post-category">
+                                数学建模
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-02-01
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-02-01
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数学建模入门"><a href="#数学建模入门" class="headerlink" title="数学建模入门"></a>数学建模入门</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="数学模型的概念"><a href="#数学模型的概念" class="headerlink" title="数学模型的概念"></a>数学模型的概念</h3><p>一般地说，数学模型可以这样来描述：对于现实世界的一个特定的对象，为了一个特定的目的，根据特有的内在规律，做出一些必要的简化假设，运用适当的数学工具，得到的一个数学结构。这里的特定对象，是指我们所要研究解决的某个具体问题，这里的特定的目的是指当研究一个特定对象时所要达到的特定目的，如分析、预测、控制、决策等。这里的数学工具指数学各分支的理论和方法及数学的某些软件系统。这里的数学结构包括各种数学方程、表格、图形等等。</p>
+<h3 id="数学模型的分类"><a href="#数学模型的分类" class="headerlink" title="数学模型的分类"></a>数学模型的分类</h3><pre><code>1. 按照建模所用的数学方法的不同，可分为：初等模型、运筹学模型、微分方程模型、概论统计模型、控制论模型等。
+   2. 按照数学模型应用领域的不同，可分为：人口模型、交通模型、经济预测模型、金融模型、环境模型、生态模型、企业管理模型、城镇规划模型等等。
+   3. 按照人们对建模机理的了解程度的不同可分为：
+             1. 白箱模型：主要指物理、力学等一些机理比较清楚的学科描述的现象以及相应的工程技术问题，这些方面的数学模型大多已经建立起来，还需深入研究的主要是针对具体问题的特定目的进行修正与完善，或者是进行优化设计与控制等。
+             2. 灰箱模型：主要指生态、经济等领域中遇到的模型，人们对其机理虽有所了解，但还不很清楚，故称为灰箱模型。在建立和改进模型方面还有不少工作要做。
+             3. 黑箱模型：主要指生命科学、社会科学等领域中遇到的模型。人们对其机理知之甚少，甚至完全不清楚，故称为黑箱模型。
+</code></pre>
+<p>模型可以分为实物（形象）模型和抽象模型，抽象模型又可以分为模拟模型和数学模型。对我们来说，最感兴趣的是数学模型。</p>
+<ol start="4">
+<li>按照模型的表现特性可分为：<ol>
+<li>确定性模型与随机性模型。前者不考虑随机因素的影响，后者考虑了随机因素的影响。</li>
+<li>静态模型与动态模型。两者的区分在于：是否考虑时间因素引起的变化。</li>
+<li>离散模型与连续模型。两者的区分在于：描述系统状态的变量是离散的还是连续的。</li>
+</ol>
+</li>
+</ol>
+<h2 id="数学建模的基本方法和步骤"><a href="#数学建模的基本方法和步骤" class="headerlink" title="数学建模的基本方法和步骤"></a>数学建模的基本方法和步骤</h2><h3 id="数学建模的基本方法"><a href="#数学建模的基本方法" class="headerlink" title="数学建模的基本方法"></a>数学建模的基本方法</h3><p>数学建模的方法按大类来分，大体上可分为三类</p>
+<ol>
+<li><p>机理分析法</p>
+<p>机理分析法就是根据人们对现实对象的了解和已有的知识、经验等，分析研究对象中各变量（因素）之间的因果关系，找出反映其内部机理的规律的一类方法。使用这种方法的前提是我们对研究对象的机理应用一定的了解。</p>
+</li>
+<li><p>测试分析法</p>
+<p>当我们对研究对象的机理不清楚的时候，可以把研究对象视为一个黑箱系统，对系统的输入输出进行预测，并以这些实测数据为基础进行统计分析来建立模型，这样的一类方法称为测试分析法。</p>
+</li>
+<li><p>综合分析法</p>
+<p>对于某些实际问题，人们常将上述两种建模方法结合起来使用，例如用机理分析法确定模型结构，再用测试分析法确定其中的参数，这类方法称为综合分析法。</p>
+</li>
+</ol>
+<h3 id="数学建模的一般步骤"><a href="#数学建模的一般步骤" class="headerlink" title="数学建模的一般步骤"></a>数学建模的一般步骤</h3><p>数学建模的步骤并没有固定的模式，常因问题性质、建模目的等而异。</p>
+<p><img src="/2023/02/shu-xue-jian-mo-ru-men/image-20230201123801456.png" alt="image-20230201123801456"></p>
+<h4 id="1-模型准备"><a href="#1-模型准备" class="headerlink" title="1.模型准备"></a>1.模型准备</h4><p>要建立现实问题的数学模型，首先要对需要解决的问题有一个清晰的提法，即要明确研究解决的问题是什么？建模所要达到的主要目的是什么？</p>
+<p>通常，当我们遇到某个实际问题时，在开始阶段，对问题的理解往往不是很清楚，所以，需要深入实际进行调查研究，收集与研究问题有关的信息、资料，与熟悉情况的有关人员进行讨论，查阅有关的文献资料，明确问题的背景和特征，由此初步确定它可能属于哪一类模型等等。总之是做好建模前的准备工作，明确所要研究解决的问题和建模要达到的主要目的。</p>
+<h4 id="2-模型假设"><a href="#2-模型假设" class="headerlink" title="2.模型假设"></a>2.模型假设</h4><p>对所研究的问题和收集的信息资料进行分析，弄清哪一些因素是主要的、起主导作用的，哪一个因素是次要的，并根据建模的目的抓住主要的因素，忽略次要的因素，即对实际问题作一些必要的简化，用精确的语言作出必要的简化假设。应该说这是一个十分困难的问题，也是建模过程中十分关键的一步，往往不可能一次完成，需要经过多次反复才能完成。</p>
+<h4 id="3-模型构成"><a href="#3-模型构成" class="headerlink" title="3.模型构成"></a>3.模型构成</h4><p>在前述工作的基础上，根据所作的假设，分析研究对象的因果关系，用数学语言加以刻划，就可得到所研究问题的数学描述，即构成所研究问题的数学模型，通常它是描述问题的主要因素的变量之间的一个关系式，在初步构成数学模型之后，一般还要进行必要的分析和化简，使它达到便于求解的形式，并根据研究的目的，对它进行检查，主要是看它能否代表所研究的实际问题。</p>
+<h4 id="4-模型求解"><a href="#4-模型求解" class="headerlink" title="4.模型求解"></a>4.模型求解</h4><p>选择合适的数学方法求解经上述步骤得到的模型。在多数情况下，我们很难获得数学模型的解析解，而只能得到它的数值解，这就需要应用各种数值方法、软件和计算机。包括各种数值优化方法，线性和非线性方程组的数值方法，微分方程（或方程组）的数值解法，各种预测、决策和概率统计方法等，以及各种应用软件系统。当现有的数学方法还不能很好解决所归纳的数学问题时，就需要针对数学模型的特点，对现有的方法进行改进或提出新的方法以适应需要。</p>
+<h4 id="5-模型分析"><a href="#5-模型分析" class="headerlink" title="5.模型分析"></a>5.模型分析</h4><p>对求解结果进行数学上的分析，如结果的误差分析、统计分析、模型对数据的灵敏度分析、对假设的强健性分析等。</p>
+<h4 id="6-模型检验"><a href="#6-模型检验" class="headerlink" title="6.模型检验"></a>6.模型检验</h4><p>把求解的分析结果翻译回到实际问题，与实际的现象、数据比较，检验模型的合理性和适用性，如果结果与实际不符，应该修改、补充假设，重新建模，如图1.2中的虚线所示。</p>
+<h4 id="7-模型应用"><a href="#7-模型应用" class="headerlink" title="7.模型应用"></a>7.模型应用</h4><p>模型应用就是把经过多次反复改进的模型及其解应用于实际系统，看能否达到预期的目的。若不够满意，则建模任务扔未完成，尚需继续努力。</p>
+<p>应当指出，并不是所有问题的建模都要经过这些步骤，有时各步骤之间的界限也不那么分明，建模时不要拘泥于形式上的按部就班。</p>
+<blockquote>
+<p>数学建模需要注意的几个问题</p>
+<ol>
+<li>根据需要对原型作一些合理的假设。</li>
+<li>恰当地使用数学方法。</li>
+<li>对建立起来的模型进行必要的分析和检验。</li>
+</ol>
+</blockquote>
+<h2 id="建模竞赛论文写作"><a href="#建模竞赛论文写作" class="headerlink" title="建模竞赛论文写作"></a>建模竞赛论文写作</h2><p>数学建模本质上是一个完整的科研过程，而建模论文则是研究结果最重要的表现形式。全国大学生数学建模竞赛（CUMCM）和美国大学生数学建模竞赛（MCM/ICM）,其评价参赛成果水平的唯一依据就是参赛学生提交的竞赛论文。因此撰写好一篇合格的、规范的、高水平的竞赛论文对各参赛队而言十分重要。</p>
+<h3 id="建模竞赛论文的一般结构"><a href="#建模竞赛论文的一般结构" class="headerlink" title="建模竞赛论文的一般结构"></a>建模竞赛论文的一般结构</h3><h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h4><p>论文的题目和摘要、关键词单独占一页，切记不要超过一页。论文的题目可以用参赛题目命名，也可以自行命名。一般而言，论文题目的命名应涵盖论文主要的研究内容和所使用的研究方法，文字不宜过长，尽量简短、精炼，一目了然。</p>
+<h4 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a><strong>摘要</strong></h4><p>摘要写作是整篇参赛论文的关键部分，它应该保证阅读者仅仅通过阅读摘要就能大致判断或了解论文的成果水平，即从摘要中能够大致判断出问题分析是否透彻，做了哪些关键假设，其合理程度如何，建模方法与模型结构是否可信，模型求解算法设计或软件使用是否可信，结果是否可靠，等等。</p>
+<p>摘要中应简要叙述论文研究的内容或背景，研究的目的，从题目或其他渠道获得了哪些信息或数据，针对所研究的问题做了哪些机理分析与数据观察，得到了什么样的启示或模型结构猜想，据此作出了哪些假设，建立了什么样的模型，求解模型的方法、算法或数学软件，求解结果，对结果做了哪些分析与验证，验证结果评价，结果应用于所研究问题的解答，研究的特色等。文字叙述应清晰、简明。</p>
+<h4 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a><strong>关键词</strong></h4><p>摘要下一行为关键词，一般为3到5个关键词。关键词应选择与主要研究内容和研究方法有关的词汇，如人口、增长率、微分方程等。</p>
+<h4 id="问题提出或重述"><a href="#问题提出或重述" class="headerlink" title="问题提出或重述"></a><strong>问题提出或重述</strong></h4><p>这是论文正文的第一个组成部分，主要介绍论文所研究的问题、研究背景、研究目的、已知信息或条件等，尽量用自己的语言择其要点叙述，避免直接拷贝或照抄原题。</p>
+<h4 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a><strong>问题分析</strong></h4><p>通过仔细阅读题目和查阅文献资料，了解问题的研究背景以及目前国内外关于该问题的研究现状、进展和主要研究结果，观察、分析问题给出的信息，找出与建模目的关联的所有可能因素，分析各因素之间可能存在的关系或应满足的规律。通过分析和合理性论证，确定哪些因素是关键的，哪些是次要的或者是可以忽略的。根据分析结果，初步确定模型的基本结构或建模方法。</p>
+<h4 id="基本假设"><a href="#基本假设" class="headerlink" title="基本假设"></a><strong>基本假设</strong></h4><p>依据分析结果，做出假设。关键假设应给出合理性分析或论证。</p>
+<h4 id="模型建立"><a href="#模型建立" class="headerlink" title="模型建立"></a><strong>模型建立</strong></h4><p>根据假设和模型结构，依据某种规律或建模方法，用数学语言给出所研究问题的数学描述。</p>
+<p>撰写这一部分时应注意：数学模型不同于数学，模型中每个符号、记号都有具体的、明确的含义和计量单位（量纲），应详细说明。</p>
+<p>符号说明可以单独列出，也可以在公式后加以注释说明；同时特定的变量或符号应通篇保持一致，不要前后各异，以免造成前后混淆和阅读困难；最后，模型的表达形式也应尽量具有一般性或可推广性。</p>
+<h4 id="参数识别与模型求解"><a href="#参数识别与模型求解" class="headerlink" title="参数识别与模型求解"></a><strong>参数识别与模型求解</strong></h4><p>根据所建立的模型形式和结构，查阅相关数学分支理论，确定求解模型的数学方法、算法或数学软件中求解此类问题的函数调用方法，包括解析解的公式推导过程、数值计算解的算法步骤和计算机编程计算结果（数据表、图形）等。如模型中包含未知参数或条件，应根据问题已知的信息和模型结构，给出模型参数的识别方法和识别结果，在此基础上给出模型的最终求解结果。注意论文正文中不要出现用于模型求解的计算机程序。</p>
+<h4 id="结果分析和检验"><a href="#结果分析和检验" class="headerlink" title="结果分析和检验"></a><strong>结果分析和检验</strong></h4><p>在求解结果应用之前，应根据问题的需要，对计算结果进行一些数学上的分析验证，如误差分析、统计假设检验、模型中参数的稳定性或灵敏度分析等，以验证模型的正确性和结果的可靠性。如经过检验发现模型和结果不可靠，应返回到模型假设上，进一步修改、补充假设，重新建模求解。最后把求解结果应用到所研究的问题上，回答或解释所研究的问题及研究的结论。根据应用结果，分析模型的优缺点，以及可能的进一步改进的方向。</p>
+<p>值得注意的是，建模问题大多为工程或管理类实际问题，模型的解不仅仅要满足可靠性，同时还应具有可操作性，即能够在实际问题中组织实施。</p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a><strong>参考文献</strong></h4><p>文献引用是考察参赛学生科研素养与学风端正程度的重要依据之一。所有在问题研究中参考过的文献资料，尤其是在论文中提及或直接引用的资料或原始数据（包括图书、期刊、网址等），都应在文中相应位置注明出处，并在参考文献中按引用次序逐一列出。参考文献一般应列举参考序号、作者姓名、论文题目或出版物名称、出版日期、出版单位、参考页码。参赛时，一般会给出具体的参考文献引用规范，应仔细阅读并严格按规范执行。</p>
+<h4 id="附录"><a href="#附录" class="headerlink" title="附录"></a><strong>附录</strong></h4><p>附录是正文的补充，一些比较重要，但又不便放在正文中的内容都可以在附录中一一列出，如主要源程序、更多的计算结果（图形、表格）等。值得注意的是，近年竞赛加强了论文的学风审核和程序验证，其中程序的验证是一个重要组成部分。一般而言，过长的源程序不宜放在论文中，可以作为论文的一个附件，随论文电子版用压缩包的形式一起提交。2020年修订的全国大学生数学建模竞赛论文格式规范规定：论文附录内容应包括支撑材料的文件列表，建模所用到的全部完整、可运行的源程序代码（含EXCEL、SPSS等软件的交互命令）等。如果缺少必要的源程序、程序不能运行或运行结果与论文不符，都可能会被取消评奖资格。如果确实没有用到程序，应在论文附录中明确说明“本论文没有用到程序”。</p>
+<blockquote>
+<p><strong>备注</strong></p>
+<p>每个竞赛题目一般有多个建模问题，撰写论文时应根据实际问题作适度结构调整，可以依建模问题次序按上述结构形式逐个解答，即每个问题的模型与求解放在一起；也可以先建立所有问题的数学模型，再依次求解各个模型，也就是说每个问题的模型和求解是分离的。建议论文中把每个问题的模型与求解放在一起，便于评委评阅。</p>
+</blockquote>
+<h3 id="撰写建模竞赛论文应注意的事项"><a href="#撰写建模竞赛论文应注意的事项" class="headerlink" title="撰写建模竞赛论文应注意的事项"></a>撰写建模竞赛论文应注意的事项</h3><ol>
+<li><p>论文写作应与建模进度同步，即应视为竞赛的一个同步过程，尽早开始，以免因时间限制，最后无法完成，或草草而就，影响论文质量。撰写论文不应等所有内容确定后再开始，而是随时记录每一个研究过程，如假设、符号、模型、分析和计算图表等，这样一旦所有研究过程完成，论文写作也基本完成了，只需最后再加以适度修改、完善即可。</p>
+</li>
+<li><p>编辑软件的选用：撰写论文可以选用Microsoft Office Word，WPS等编辑软件，也可以使用数学论文专业编辑软件CTeX或LaTeX。提交的论文文件扩展名可以是.docx或.pdf格式。</p>
+</li>
+<li><p>数学符号、公式的输入：利用Microsoft Office Word编辑论文时，所有数学符号和公式应通过Microsoft Office Word自带的公式编辑器或MathType输入。</p>
+</li>
+<li><p>论文写作规范是论文评审中的一个环节，包括文字、论文格式、公式符号、图形表格、参考文献引用规范等。文字规范是指论文用语应尽量使用科技语言，避免口语化；论文格式规范包括字形、字号、行间距、字间距、图形、表格排版规范等；公式符号规范是指变量、常量、符号等规定及输入应尽量符合数学习惯，避免随意；图形、表格应该有编号、标题等，避免出现“上图”“下图”或“上表”“下表”等表达方式。此外运算结果应避免屏幕截图或软件截图形式，直接叙述有关的结果即可；参考文献规范包括文献引用及文献格式规范等。</p>
+</li>
+</ol>
+<h3 id="数学建模与能力培养"><a href="#数学建模与能力培养" class="headerlink" title="数学建模与能力培养"></a>数学建模与能力培养</h3><ol>
+<li>翻译能力</li>
+<li>综合应用与分析能力</li>
+<li>联想能力</li>
+<li>洞察能力（或叫洞察力）</li>
+<li>熟练使用技术手段的能力</li>
+<li>科技论文的写作能力</li>
+</ol>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../about" rel="external nofollow noreferrer">Codingqiang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://nelsonwq.github.io">https://nelsonwq.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../about" target="_blank">Codingqiang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="../../../tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                                    <span class="chip bg-color">数学建模</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../python-suan-fa-ji-qiao-yu-nei-zhi-ku-shi-yong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../medias/featureimages/7.jpg" class="responsive-img" alt="Python算法技巧与内置库使用">
+                        
+                        <span class="card-title">Python算法技巧与内置库使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../../../categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../../../tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../01/python100-ti/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../medias/featureimages/19.jpg" class="responsive-img" alt="Python100题">
+                        
+                        <span class="card-title">Python100题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../../../categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../../../tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Codingqiang<br />'
+            + '文章作者: Codingqiang<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align"
+        style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+            <span id="year">2023</span>
+            
+            <span id="year">2023</span>
+            <a href="../../../about" target="_blank">Codingqiang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">263.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2023";
+                    var startMonth = "1";
+                    var startDate = "7";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/nelsonwq" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2501551375@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2501551375" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2501551375" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+    <!-- 白天和黑夜主题 -->
+<div class="sum-moon-box">
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="switchNightMode()" title="切换主题">
+        <i id="sum-moon-icon" class="fas fa-sun" style="width:48px; height:48px; font-size: 28px;"></i>
+    </a>
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+            setTimeout(function () {
+                $('body').hasClass('DarkMode') ?
+                    ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon')
+                        .removeClass("fa-sun").addClass('fa-moon')) :
+                    ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon')
+                        .addClass("fa-sun").removeClass('fa-moon')),
+
+                    setTimeout(function () {
+                        $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                            $(this).remove()
+                        })
+                    }, 2e3)
+                setTimeout(function () {
+                    window.location.reload();
+                }, 1500)
+            })
+
+    }
+</script>
+
+    
+
+    <script>
+        /* 模式判断 */
+        if (localStorage.getItem('isDark') === '1') {
+            document.body.classList.add('DarkMode');
+            $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')
+        } else {
+            document.body.classList.remove('DarkMode');
+            $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')
+        }
+    </script>
+
+    <script src="../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../libs/aos/aos.js"></script>
+    <script src="../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../js/matery.js"></script>
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="../../../libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="../../../libs/background/ribbon-dynamic.js"
+        async="async"></script>
+    
+
+    
+
+</body>
+
+</html>

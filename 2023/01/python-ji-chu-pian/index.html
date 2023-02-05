@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python, 软件工程 博客 算法 软件开发 Java">
+    <meta name="keywords" content="Python基础篇, 软件工程 博客 算法 软件开发 Java">
     <meta name="description" content="学习博客 | 记录学习 | 记录生活 | 有道无术，术尚可求 有术无道，止于术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Python | Codingqiang</title>
+    <title>Python基础篇 | Codingqiang</title>
     <link rel="icon" type="image/png" href="../../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../../../libs/awesome/css/all.css">
@@ -474,12 +474,12 @@
 
     
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('../../../medias/featureimages/24.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python</h1>
+                    <h1 class="description center-align post-title">Python基础篇</h1>
                 </div>
             </div>
         </div>
@@ -627,7 +627,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-30
+                    2023-02-05
                 </div>
                 
 
@@ -1813,8 +1813,7 @@ o<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><s
     <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">7</span><span class="token punctuation">:</span>
         <span class="token keyword">continue</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    i <span class="token operator">+=</span> <span class="token number">1</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    i <span class="token operator">+=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>输出结果是:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token number">1</span>
@@ -2572,14 +2571,12 @@ ValueError<span class="token punctuation">:</span> <span class="token string">'a
 <h5 id="del"><a href="#del" class="headerlink" title="del"></a>del</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python">movieName <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'加勒比海盗'</span><span class="token punctuation">,</span><span class="token string">'骇客帝国'</span><span class="token punctuation">,</span><span class="token string">'第一滴血'</span><span class="token punctuation">,</span><span class="token string">'指环王'</span><span class="token punctuation">,</span><span class="token string">'霍比特人'</span><span class="token punctuation">,</span><span class="token string">'速度与激情'</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之前------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span>
 <span class="token keyword">del</span> movieName<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之后------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之后------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h5 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python">movieName <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'加勒比海盗'</span><span class="token punctuation">,</span><span class="token string">'骇客帝国'</span><span class="token punctuation">,</span><span class="token string">'第一滴血'</span><span class="token punctuation">,</span><span class="token string">'指环王'</span><span class="token punctuation">,</span><span class="token string">'霍比特人'</span><span class="token punctuation">,</span><span class="token string">'速度与激情'</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之前------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span>
 movieName<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之后------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之后------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h5 id="remove"><a href="#remove" class="headerlink" title="remove"></a>remove</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python">movieName <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'加勒比海盗'</span><span class="token punctuation">,</span><span class="token string">'骇客帝国'</span><span class="token punctuation">,</span><span class="token string">'第一滴血'</span><span class="token punctuation">,</span><span class="token string">'指环王'</span><span class="token punctuation">,</span><span class="token string">'霍比特人'</span><span class="token punctuation">,</span><span class="token string">'速度与激情'</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'------删除之前------movieName=%s'</span> <span class="token operator">%</span> movieName<span class="token punctuation">)</span>
@@ -2660,8 +2657,7 @@ nums1 <span class="token operator">=</span> <span class="token punctuation">[</s
 nums2 <span class="token operator">=</span> nums1
 nums2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>nums2<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>nums1<span class="token punctuation">)</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>nums1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>思考：</p>
 <ol>
@@ -2792,8 +2788,7 @@ nameList<span class="token punctuation">[</span><span class="token number">3</sp
 <h3 id="字典的使用"><a href="#字典的使用" class="headerlink" title="字典的使用"></a>字典的使用</h3><p>定义字典的格式：**{键1:值1, 键2:值2, 键3:值3, …, 键n:值n}**</p>
 <p>变量info为字典类型：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">info <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'班长'</span><span class="token punctuation">,</span> <span class="token string">'id'</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">'sex'</span><span class="token punctuation">:</span><span class="token string">'f'</span><span class="token punctuation">,</span> <span class="token string">'address'</span><span class="token punctuation">:</span><span class="token string">'地球亚洲中国上海'</span><span class="token punctuation">}</span>
-info<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>  <span class="token comment"># 字典使用键来获取对应的值</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+info<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>  <span class="token comment"># 字典使用键来获取对应的值</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>说明：</p>
 <ul>
@@ -2971,16 +2966,15 @@ KeyError<span class="token punctuation">:</span> <span class="token string">'Fac
 
 <p>此外还有一个方法也是移除集合中的元素，且如果元素不存在，不会发生错误。格式如下所示：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">s<span class="token punctuation">.</span>discard<span class="token punctuation">(</span> x <span class="token punctuation">)</span>
-Copy
+
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>thisset <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">"Google"</span><span class="token punctuation">,</span> <span class="token string">"Runoob"</span><span class="token punctuation">,</span> <span class="token string">"Taobao"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> thisset<span class="token punctuation">.</span>discard<span class="token punctuation">(</span><span class="token string">"Facebook"</span><span class="token punctuation">)</span>  <span class="token comment"># 不存在不会发生错误</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">print</span><span class="token punctuation">(</span>thisset<span class="token punctuation">)</span>
-<span class="token punctuation">{</span><span class="token string">'Taobao'</span><span class="token punctuation">,</span> <span class="token string">'Google'</span><span class="token punctuation">,</span> <span class="token string">'Runoob'</span><span class="token punctuation">}</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">{</span><span class="token string">'Taobao'</span><span class="token punctuation">,</span> <span class="token string">'Google'</span><span class="token punctuation">,</span> <span class="token string">'Runoob'</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>我们也可以设置随机删除集合中的一个元素，语法格式如下：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">s<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
-Copy
+
 thisset <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">"Google"</span><span class="token punctuation">,</span> <span class="token string">"Runoob"</span><span class="token punctuation">,</span> <span class="token string">"Taobao"</span><span class="token punctuation">,</span> <span class="token string">"Facebook"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 x <span class="token operator">=</span> thisset<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
@@ -3164,8 +3158,7 @@ nums <span class="token operator">=</span> json<span class="token punctuation">.
 
 <h4 id="-1"><a href="#-1" class="headerlink" title="-"></a>-</h4><p>减法只能用于<strong>集合</strong>里，用来求两个集合的差集。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span> <span class="token operator">-</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span>
-<span class="token punctuation">{</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">}</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">{</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="-2"><a href="#-2" class="headerlink" title="*"></a>*</h4><p>加法运算符可以用于<strong>字符串、列表和元组</strong>，用来将可迭代对象重复多次，同样<strong>不能用于字典和集合</strong>。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token string">'ab'</span> <span class="token operator">*</span> <span class="token number">4</span>
@@ -3183,8 +3176,7 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token number">4</span> <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
 <span class="token boolean">True</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token string">"name"</span> <span class="token keyword">in</span> <span class="token punctuation">{</span><span class="token string">"name"</span><span class="token punctuation">:</span><span class="token string">"chris"</span><span class="token punctuation">,</span> <span class="token string">"age"</span><span class="token punctuation">:</span><span class="token number">18</span><span class="token punctuation">}</span>
-<span class="token boolean">True</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token boolean">True</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="遍历-1"><a href="#遍历-1" class="headerlink" title="遍历"></a>遍历</h3><p>通过<code>for ... in ...</code> 我们可以遍历字符串、列表、元组、字典、集合等可迭代对象。</p>
 <h4 id="字符串遍历"><a href="#字符串遍历" class="headerlink" title="字符串遍历"></a>字符串遍历</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> a_str <span class="token operator">=</span> <span class="token string">"hello world"</span>
@@ -3197,14 +3189,12 @@ h e l l o   w o r l d<span aria-hidden="true" class="line-numbers-rows"><span></
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">for</span> num <span class="token keyword">in</span> a_list<span class="token punctuation">:</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>     <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">' '</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="元组遍历"><a href="#元组遍历" class="headerlink" title="元组遍历"></a>元组遍历</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> a_turple <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">for</span> num <span class="token keyword">in</span> a_turple<span class="token punctuation">:</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>     <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
-<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span>
-Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="带下标的遍历"><a href="#带下标的遍历" class="headerlink" title="带下标的遍历"></a>带下标的遍历</h3><p>可迭代对象都可以使用 enumerate 内置类进行包装成一个 enumerate 对象。对 enumerate 进行遍历，可以同时得到一个可迭代对象的下标和元素。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
@@ -3441,9 +3431,9 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     <div class="card-image">
                         
                         
-                        <img src="../../../medias/featureimages/1.jpg" class="responsive-img" alt="Python函数-对象">
+                        <img src="../../../medias/featureimages/11.jpg" class="responsive-img" alt="Python高级篇">
                         
-                        <span class="card-title">Python函数-对象</span>
+                        <span class="card-title">Python高级篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -3486,13 +3476,13 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="../vue/">
+                <a href="../springmvc/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../medias/featureimages/24.jpg" class="responsive-img" alt="Vue">
+                        <img src="../../../medias/featureimages/17.jpg" class="responsive-img" alt="SpringMVC">
                         
-                        <span class="card-title">Vue</span>
+                        <span class="card-title">SpringMVC</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -3509,8 +3499,8 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="../../../categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="../../../categories/SpringMVC/" class="post-category">
+                                    SpringMVC
                                 </a>
                             
                             
@@ -3520,8 +3510,8 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../../../tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="../../../tags/SpringMVC/">
+                        <span class="chip bg-color">SpringMVC</span>
                     </a>
                     
                 </div>
@@ -3707,7 +3697,7 @@ Copy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">230.5k</span>&nbsp;字
+                class="white-color">263.5k</span>&nbsp;字
             
             
             

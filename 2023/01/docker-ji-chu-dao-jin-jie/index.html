@@ -627,7 +627,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-21
+                    2023-02-02
                 </div>
                 
 
@@ -641,7 +641,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    79 分
+                    80 分
                 </div>
                 
 
@@ -1848,12 +1848,15 @@ https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Linux-
 <h4 id="通过-curl的方式下载"><a href="#通过-curl的方式下载" class="headerlink" title="通过 curl的方式下载"></a>通过 curl的方式下载</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#3 运行以下命令以下载Docker Compose的当前稳定版本：</span>
 <span class="token function">sudo</span> <span class="token function">curl</span> <span class="token parameter variable">-L</span> <span class="token string">"https://github.com/docker/compose/releases/download/1.25.5/docker-compose-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-s</span><span class="token variable">)</span></span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">)</span></span>"</span> <span class="token parameter variable">-o</span> /usr/local/bin/docker-compose
 
+<span class="token comment"># 若GitHub无法访问或者访问太慢，尝试使用daocloud下载</span>
+<span class="token function">sudo</span> <span class="token function">curl</span> <span class="token parameter variable">-L</span> https://get.daocloud.io/docker/compose/releases/download/1.25.1/docker-compose-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> <span class="token parameter variable">-s</span><span class="token variable">`</span></span>-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">`</span></span> <span class="token parameter variable">-o</span> /usr/local/bin/docker-compose
+
 <span class="token comment"># 4将可执行权限应用于二进制文件：</span>
 <span class="token function">sudo</span> <span class="token function">chmod</span> +x /usr/local/bin/docker-compose
 
 <span class="token comment">#5测试是否安装</span>
 <span class="token function">docker-compose</span> <span class="token parameter variable">--version</span>
-<span class="token comment"># docker-compose version 1.25.5, build 1110ad01</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment"># docker-compose version 1.25.5, build 1110ad01</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="卸载-1"><a href="#卸载-1" class="headerlink" title="卸载"></a>卸载</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#如果是 二进制包方式安装的，删除二进制文件即可</span>
 <span class="token function">sudo</span> <span class="token function">rm</span> /usr/local/bin/docker-compose
@@ -2890,7 +2893,7 @@ ll
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">230.5k</span>&nbsp;字
+                class="white-color">263.5k</span>&nbsp;字
             
             
             
