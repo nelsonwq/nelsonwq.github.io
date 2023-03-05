@@ -1167,7 +1167,7 @@
 <h2 id="四、SpringMVC的请求处理流程"><a href="#四、SpringMVC的请求处理流程" class="headerlink" title="四、SpringMVC的请求处理流程"></a>四、SpringMVC的请求处理流程</h2><h4 id="4-1-请求处理流程"><a href="#4-1-请求处理流程" class="headerlink" title="4.1 请求处理流程"></a>4.1 请求处理流程</h4><blockquote>
 <p>SpringMVC通过前端控制器（DispatcherServlet）拦截并处理用户请求的</p>
 </blockquote>
-<p><img src="/2023/01/springmvc/1617257389694.png" alt="1617257389694"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springmvc/1617257389694.png" alt="1617257389694"></p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">① 前端发送请求被前端控制器DispatcherServlet拦截
 ② 前端控制器调用处理器映射器HandlerMapping对请求URL进行解析，解析之后返回调用给前端控制器
 ③ 前端控制器调用处理器适配器处理调用链
@@ -1581,7 +1581,7 @@
 <h4 id="8-3-拦截器链"><a href="#8-3-拦截器链" class="headerlink" title="8.3 拦截器链"></a>8.3 拦截器链</h4><blockquote>
 <p>将多个拦截器按照一定的顺序构成一个执行链</p>
 </blockquote>
-<p><img src="/2023/01/springmvc/1617334128888.png" alt="1617334128888"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springmvc/1617334128888.png" alt="1617334128888"></p>
 <h2 id="九、SSM整合"><a href="#九、SSM整合" class="headerlink" title="九、SSM整合"></a>九、SSM整合</h2><h4 id="9-1-创建web项目"><a href="#9-1-创建web项目" class="headerlink" title="9.1 创建web项目"></a>9.1 创建web项目</h4><ul>
 <li><p>创建maven工程</p>
 </li>
@@ -2391,7 +2391,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -2682,6 +2682,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>

@@ -725,7 +725,7 @@
 
 
 
-<h3 id="XML配置版"><a href="#XML配置版" class="headerlink" title="XML配置版"></a>XML配置版</h3><p><img src="/2023/01/springboot/image-20210318193021234.png" alt="image-20210318193021234"></p>
+<h3 id="XML配置版"><a href="#XML配置版" class="headerlink" title="XML配置版"></a>XML配置版</h3><p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210318193021234.png" alt="image-20210318193021234"></p>
 <ol>
 <li>定义一个Bean-SomeBean</li>
 </ol>
@@ -761,7 +761,7 @@
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="JavaConfig版"><a href="#JavaConfig版" class="headerlink" title="JavaConfig版"></a>JavaConfig版</h3><p><img src="/2023/01/springboot/image-20210318193243499.png" alt="image-20210318193243499"></p>
+<h3 id="JavaConfig版"><a href="#JavaConfig版" class="headerlink" title="JavaConfig版"></a>JavaConfig版</h3><p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210318193243499.png" alt="image-20210318193243499"></p>
 <ol>
 <li>定义一个Bean-SomeBean</li>
 </ol>
@@ -844,7 +844,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="Bean注解详解"><a href="#Bean注解详解" class="headerlink" title="@Bean注解详解"></a>@Bean注解详解</h2><h3 id="Bean实例属性"><a href="#Bean实例属性" class="headerlink" title="Bean实例属性"></a><strong>Bean实例属性</strong></h3><p><img src="/2023/01/springboot/image-20210319115525324.png" alt="image-20210319115525324"></p>
+<h2 id="Bean注解详解"><a href="#Bean注解详解" class="headerlink" title="@Bean注解详解"></a>@Bean注解详解</h2><h3 id="Bean实例属性"><a href="#Bean实例属性" class="headerlink" title="Bean实例属性"></a><strong>Bean实例属性</strong></h3><p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319115525324.png" alt="image-20210319115525324"></p>
 <p>定义一个新的SomeBean类</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Setter</span>
 <span class="token annotation punctuation">@Getter</span>
@@ -883,7 +883,7 @@
 <span class="token operator">*</span> <span class="token number">4</span><span class="token operator">&gt;</span>bean标签中destroy<span class="token operator">-</span>method属性等价于<span class="token annotation punctuation">@Bean</span>注解中destroyMethod属性
 <span class="token operator">*</span> <span class="token number">5</span><span class="token operator">&gt;</span>bean标签中scope属性等价于实例方法中的<span class="token annotation punctuation">@Scope</span>注解<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="Bean实例依赖注入"><a href="#Bean实例依赖注入" class="headerlink" title="Bean实例依赖注入"></a>Bean实例依赖注入</h3><p><img src="/2023/01/springboot/image-20210319133324229.png" alt="image-20210319133324229"></p>
+<h3 id="Bean实例依赖注入"><a href="#Bean实例依赖注入" class="headerlink" title="Bean实例依赖注入"></a>Bean实例依赖注入</h3><p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319133324229.png" alt="image-20210319133324229"></p>
 <p><strong>定义新类</strong></p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OtherBean</span> <span class="token punctuation">{</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -958,7 +958,7 @@
 <p>配置类导入注解，贴在配置类上，作用等价于：<import resource="xxx配置.xml"></import>标签</p>
 <p>该标签用于配置类与配置类间的导入。</p>
 <p><strong>验证</strong></p>
-<p><img src="/2023/01/springboot/image-20210319134222078.png" alt="image-20210319134222078"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319134222078.png" alt="image-20210319134222078"></p>
 <p>操作流程</p>
 <ol>
 <li>定义OtherBean跟SomeBean</li>
@@ -1056,7 +1056,7 @@
 </blockquote>
 <p>资源文件取值注解，从properties配置中获取配置的数据，使用SpEL表达式</p>
 <p>例子：</p>
-<p><img src="/2023/01/springboot/image-20210319142843014.png" alt="image-20210319142843014"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319142843014.png" alt="image-20210319142843014"></p>
 <ol>
 <li>创建一个db.properties</li>
 </ol>
@@ -1238,7 +1238,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 
 <p>问题2中说了，springboot收集了很多常用的第三方jar依赖，为了进一步提高用户体验感，springboot根据jar依赖特点，对这些依赖进一步分类，整合，再封装，形成一个新的依赖工具集， 每个工具集都解决特定领域的依赖问题。springboot将这些依赖工具称为：启动器（组件），命名规则： spring-boot-starter-xxx。 如果是非springboot定制的启动器， 一般命名规则：xxx-spring-boot-starter</p>
 <p>入门案例中导入的spring-boot-starter-web 就是用于解决web项目依赖的工具集(启动器)</p>
-<p><img src="/2023/01/springboot/image-20210319153122102.png" alt="image-20210319153122102"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319153122102.png" alt="image-20210319153122102"></p>
 <p>常用的启动器(starter)还有很多： </p>
 <blockquote>
 <p>spring-boot-starter: 核心启动器 , 提供了自动配置,日志和YAML配置支持</p>
@@ -1352,7 +1352,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>getCandidateConfigurations方法作用是委托SpringFactoriesLoader去读取jar包中的META-INF/spring.factories文件,  并加载里面配置的自动配置对象，其中包括: AOP / PropertyPlaceholder / FreeMarker / HttpMessageConverter / Jackson / DataSource / DataSourceTransactionManager / DispatcherServlet / WebMvc 等等。</p>
-<p><img src="/2023/01/springboot/image-20210319170855761.png" alt="image-20210319170855761"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319170855761.png" alt="image-20210319170855761"></p>
 <p>一个注意点：<strong>不管是spring定制的启动器，还是第三方定制的启动器，都需要编写META-INF/spring.factories，里面指定启动器的自动配置类</strong></p>
 <p>接上面分析， spring.factories文件中配置很多自动配置类,哪些会生效(加载到spring容器并跑起来)呢， 此时需要满足这些启动类生效条件才会自动装配。 </p>
 <p>以我们熟悉springmvc为例子：</p>
@@ -1432,7 +1432,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </ul>
 <p><strong>问题5：没有配置tomcat，没有设置端口服务器怎么来，又怎么启动的</strong></p>
 <p>springboot使用嵌入式tomcat，编程实现，默认端口是8080，后续可以通过application.properties文件进行修改</p>
-<p><img src="/2023/01/springboot/image-20210319185121534.png" alt="image-20210319185121534"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319185121534.png" alt="image-20210319185121534"></p>
 <p><strong>问题6：main方法中SpringApplication.run(..)又是什么情况</strong></p>
 <p>SpringApplication.run(..)的作用</p>
 <ul>
@@ -1448,11 +1448,11 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <h2 id="SpringBoot其他相关"><a href="#SpringBoot其他相关" class="headerlink" title="SpringBoot其他相关"></a>SpringBoot其他相关</h2><h3 id="SpringBoot项目快速搭建"><a href="#SpringBoot项目快速搭建" class="headerlink" title="SpringBoot项目快速搭建"></a>SpringBoot项目快速搭建</h3><p>SpringBoot建议使用官方提供的工具来快速构建项目,网站:<a target="_blank" rel="noopener" href="https://start.spring.io/">https://start.spring.io/</a> ,IDEA自带该功能,但需要联网使用, 也可以使用 <a target="_blank" rel="noopener" href="https://start.springboot.io/">https://start.springboot.io/</a></p>
 <p>注意:官方提供的构建工具默认只能选择固定的版本,有些版本之间的差异非常大,所以如果需要选择某个版本可以自行在pom.xml文件中修改版本</p>
 <p><strong>勾选web依赖包</strong></p>
-<p><img src="/2023/01/springboot/image-20210319185637709.png" alt="image-20210319185637709"></p>
-<p><img src="/2023/01/springboot/image-20210319185736011.png" alt="image-20210319185736011"></p>
-<p><img src="/2023/01/springboot/image-20210319185842322.png" alt="image-20210319185842322"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319185637709.png" alt="image-20210319185637709"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319185736011.png" alt="image-20210319185736011"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319185842322.png" alt="image-20210319185842322"></p>
 <p><strong>注意：学习阶段禁止使用</strong></p>
-<h2 id="springBoot标准项目结构"><a href="#springBoot标准项目结构" class="headerlink" title="springBoot标准项目结构"></a>springBoot标准项目结构</h2><p><img src="/2023/01/springboot/image-20210319190221477.png" alt="image-20210319190221477"></p>
+<h2 id="springBoot标准项目结构"><a href="#springBoot标准项目结构" class="headerlink" title="springBoot标准项目结构"></a>springBoot标准项目结构</h2><p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319190221477.png" alt="image-20210319190221477"></p>
 <p>resources：资源文件，存放静态文件，模板文件，配置文件</p>
 <p>static：存放静态文件</p>
 <p>templates：存放模板文件</p>
@@ -1471,11 +1471,11 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>2：maven命令打包</p>
-<p><img src="/2023/01/springboot/image-20210319190557041.png" alt="image-20210319190557041"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319190557041.png" alt="image-20210319190557041"></p>
 <p>打包成功之后，在项目的target包可以找到独立运行的jar</p>
-<p><img src="/2023/01/springboot/image-20210319190647516.png" alt="image-20210319190647516"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319190647516.png" alt="image-20210319190647516"></p>
 <p>3：进入target源目录，运行jar</p>
-<p><img src="/2023/01/springboot/image-20210319190830217.png" alt="image-20210319190830217"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210319190830217.png" alt="image-20210319190830217"></p>
 <p>打开cmd命令框， 运行： java -jar xxx.jar</p>
 <p>一个注意点：如果想修改项目端口， 可以： java -jar xxx.jar   –server.post=8888</p>
 <h3 id="SpringBoot优缺点"><a href="#SpringBoot优缺点" class="headerlink" title="SpringBoot优缺点"></a>SpringBoot优缺点</h3><p>优点:</p>
@@ -1621,7 +1621,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 
 
 <h2 id="SpringBoot各种整合"><a href="#SpringBoot各种整合" class="headerlink" title="SpringBoot各种整合"></a>SpringBoot各种整合</h2><h3 id="项目改造"><a href="#项目改造" class="headerlink" title="项目改造"></a>项目改造</h3><p>将sb-demo项目改造成标准的spring项目</p>
-<p><img src="/2023/01/springboot/image-20210322102747133.png" alt="image-20210322102747133"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210322102747133.png" alt="image-20210322102747133"></p>
 <h3 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h3><p>引入mysql操作依赖</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!-- MySQL驱动 --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -1656,7 +1656,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>观察打印日志</p>
-<p><img src="/2023/01/springboot/image-20210322114514021.png" alt="image-20210322114514021"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210322114514021.png" alt="image-20210322114514021"></p>
 <h4 id="Druid集成"><a href="#Druid集成" class="headerlink" title="Druid集成"></a>Druid集成</h4><p>当然如果我们在项目中还是想要使用<strong>Druid</strong>作为连接池也是可以的</p>
 <p>只需要添加依赖即可, 此时加的是<strong>Druid</strong>的springboot自动配置包, 里面包含了DruidDataSourceAutoConfigure自动配置类,会自动创建druid的连接池对象, 所以springboot发现已经有连接池对象了,则不会再使用<strong>Hikari</strong></p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!-- druid --&gt;</span>
@@ -1668,7 +1668,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>执行/datasource 观察日志</p>
-<p><img src="/2023/01/springboot/image-20210322114715552.png" alt="image-20210322114715552"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20210322114715552.png" alt="image-20210322114715552"></p>
 <p>**注意 **: 如果添加的依赖是以前那种普通包, 只有Druid自身的依赖, 并不是自动配置包, 则需要以下配置</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.alibaba<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
@@ -1703,7 +1703,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <ol start="3">
 <li>编写测试类</li>
 </ol>
-<p><img src="/2023/01/springboot/image-20220621001315893.png" alt="image-20220621001315893">*</p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20220621001315893.png" alt="image-20220621001315893">*</p>
 <p><strong>注意：要求必须跟启动类同包下或者是启动类的子包</strong></p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@SpringBootTest</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SbTest</span> <span class="token punctuation">{</span>
@@ -1870,7 +1870,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>context</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>generatorConfiguration</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2023/01/springboot/image-20220619163310439.png" alt="image-20220619163310439">*</p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20220619163310439.png" alt="image-20220619163310439">*</p>
 <p>3:整合mybatis</p>
 <h4 id="准备依赖"><a href="#准备依赖" class="headerlink" title="准备依赖"></a>准备依赖</h4><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--mybatis集成到SpringBoot中的依赖--&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -2036,7 +2036,7 @@ jdbc.password=admin<span aria-hidden="true" class="line-numbers-rows"><span></sp
 
 
 <h3 id="WEB集成"><a href="#WEB集成" class="headerlink" title="WEB集成"></a>WEB集成</h3><h4 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h4><p>拷贝静态资源及模板文件</p>
-<p><img src="/2023/01/springboot/image-20200401103703378.png" alt="image-20200401103703378"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/springboot/image-20200401103703378.png" alt="image-20200401103703378"></p>
 <h4 id="静态资源处理"><a href="#静态资源处理" class="headerlink" title="静态资源处理"></a><strong>静态资源处理</strong></h4><ol>
 <li><p>默认情况下,Springboot会从classpath下的 /static , /public , /resources , /META-INF/resources下加载静态资源</p>
 </li>
@@ -2358,7 +2358,7 @@ spring.freemarker.template-loader-path=classpath:/templates/: 模板加载地址
 </li>
 <li><p>Springboot默认选择Logback作为日志框架,也能选择其他日志框架,但是没有必要</p>
 <p>common-logging / java-logging / log4j / log4j2 / logback / slf4j</p>
-<img src="../../../../../../../SpringBoot课件/images/20180503123846653.png"></li>
+<img src="/medias/loading.gif" data-original="../../../../../../../SpringBoot课件/images/20180503123846653.png"></li>
 </ol>
 <h3 id="类中使用日志输出"><a href="#类中使用日志输出" class="headerlink" title="类中使用日志输出"></a>类中使用日志输出</h3><p>在我们自定义的类中如果要使用日志框架来输出</p>
 <p>方式1: 在类中定义一个静态Logger对象</p>
@@ -2383,7 +2383,7 @@ log<span class="token punctuation">.</span><span class="token function">info</sp
 log<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"权限插入成功:{}"</span><span class="token punctuation">,</span>expression<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>执行权限加载功能后,发现控制台出现info与warn的信息, debug的没有显示,原因是因为springboot默认的日志级别是info,所以debug低于info级别,就不会显示出来了</p>
-<img src="../../../../../../../SpringBoot课件/images/1585749306554.png">
+<img src="/medias/loading.gif" data-original="../../../../../../../SpringBoot课件/images/1585749306554.png">
 
 <p>如果要修改日志级别,最快速的方式是在application.properties配置</p>
 <pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token comment">#把日志级别修改为debug,不过我们一般不会更改,除非要调试找bug,不然控制台显示的内容太多也容易乱</span>
@@ -2951,7 +2951,7 @@ log<span class="token punctuation">.</span><span class="token function">warn</sp
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -3242,6 +3242,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>

@@ -834,7 +834,7 @@
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>输出结果为：</p>
-<p><img src="/2023/01/es6-he-xin-zhi-shi/V2ZIe5k.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/es6-he-xin-zhi-shi/V2ZIe5k.png" alt="img"></p>
 <h2 id="7-形参默认值"><a href="#7-形参默认值" class="headerlink" title="7. 形参默认值"></a>7. 形参默认值</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
    <span class="token comment">//定义一个点的坐标的构造函数</span>
     <span class="token keyword">function</span> <span class="token function">Point</span><span class="token punctuation">(</span><span class="token parameter">x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>y <span class="token operator">=</span> <span class="token number">5</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//使用形参默认值</span>
@@ -848,7 +848,7 @@
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>输出结果为;</p>
-<p><img src="/2023/01/es6-he-xin-zhi-shi/wyfPfxT.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/es6-he-xin-zhi-shi/wyfPfxT.png" alt="img"></p>
 <h2 id="8-promise对象原理"><a href="#8-promise对象原理" class="headerlink" title="8. promise对象原理"></a>8. promise对象原理</h2><p>Promise对象，代表了未来某个将要发生的事件（通常是一个异步操作）；<br>有了Promise对象。我们可以将异步操作以同步的流程表达出来，避免了层层嵌套的回调函数，在ES6中，Promise是一个构造函数，用来生成promise实例。</p>
 <h3 id="8-1-使用步骤："><a href="#8-1-使用步骤：" class="headerlink" title="8.1 使用步骤："></a>8.1 使用步骤：</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
     <span class="token comment">//创建promise对象</span>
@@ -2241,7 +2241,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -2532,6 +2532,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>

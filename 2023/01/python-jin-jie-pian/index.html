@@ -779,7 +779,7 @@ f<span class="token punctuation">.</span>close<span class="token punctuation">(<
 f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'hello world, i am here!\n'</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">)</span>
 f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>运行之后会在<code>file_write_test.py</code>文件所在的路径中创建一个文件<code>test.txt</code>,并写入内容，运行效果显示如下: <img src="/2023/01/python-jin-jie-pian/%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5.png" alt="img"></p>
+<p>运行之后会在<code>file_write_test.py</code>文件所在的路径中创建一个文件<code>test.txt</code>,并写入内容，运行效果显示如下: <img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5.png" alt="img"></p>
 <p>注意：</p>
 <ul>
 <li>如果文件不存在，那么创建；如果存在那么就先清空，然后写入数据</li>
@@ -1093,7 +1093,7 @@ p <span class="token operator">=</span> json<span class="token punctuation">.</s
 </ul>
 <h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><p>程序在运行过程中，由于我们的编码不规范，或者其他原因一些客观原因，导致我们的程序无法继续运行，此时，程序就会出现异常。如果我们不对异常进行处理，程序可能会由于异常直接中断掉。为了保证程序的健壮性，我们在程序设计里提出了异常处理这个概念。</p>
 <h3 id="读取文件异常"><a href="#读取文件异常" class="headerlink" title="读取文件异常"></a>读取文件异常</h3><p>在读取一个文件时，如果这个文件不存在，则会报出<code>FileNotFoundError</code>错误。</p>
-<p><img src="/2023/01/python-jin-jie-pian/%E5%BC%82%E5%B8%B8.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E5%BC%82%E5%B8%B8.png" alt="img"></p>
 <p>程序在运行过程中会经常遇到类似的异常，如果我们不进行处理，此时程序就会中断并退出。为了提高程序的健壮性，我们可以使用异常处理机制来解决程序运行过程中可能出现的问题。</p>
 <h3 id="try…except语句"><a href="#try…except语句" class="headerlink" title="try…except语句"></a>try…except语句</h3><p>try…except语句可以对代码运行过程中可能出现的异常进行处理。 语法结构:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">try</span><span class="token punctuation">:</span>
@@ -1222,7 +1222,7 @@ p <span class="token operator">=</span> json<span class="token punctuation">.</s
 main<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>运行结果如下:</p>
-<p><img src="/2023/01/python-jin-jie-pian/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8.png" alt="img"></p>
 <h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>迭代是访问集合元素的一种方式。迭代器是一个可以记住遍历的位置的对象。迭代器对象从集合的第一个元素开始访问，直到所有的元素被访问完结束。迭代器只能往前不会后退。</p>
 <h3 id="1-可迭代对象"><a href="#1-可迭代对象" class="headerlink" title="1. 可迭代对象"></a>1. 可迭代对象</h3><p>我们已经知道可以对list、tuple、str等类型的数据使用for…in…的循环语法从其中依次拿到数据进行使用，我们把这样的过程称为遍历，也叫<strong>迭代</strong>。</p>
 <p><strong>但是，是否所有的数据类型都可以放到for…in…的语句中，然后让for…in…每次从中取出一条数据供我们使用，即供我们迭代吗？</strong></p>
@@ -2145,12 +2145,12 @@ num <span class="token operator">=</span> re<span class="token punctuation">.</s
 <li>使用网络能够把多方链接在一起，然后可以进行数据传递</li>
 <li>所谓的网络编程就是，让在不同的电脑上的软件能够进行数据传递，即进程之间的通信</li>
 </ul>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160901_55.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160901_55.png" alt="img"></p>
 <h3 id="ip地址"><a href="#ip地址" class="headerlink" title="ip地址"></a>ip地址</h3><p>生活中的地址指的就是，找到某人或某机关或与其通信的指定地点。在网络编程中，如果一台主机想和另一台主机进行沟通和共享数据，首先要做的第一件事情就是要找到对方。在互联网通信中，我们使用IP地址来查询到各个主机。</p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160901_60.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160901_60.png" alt="img"></p>
 <p><strong>ip地址：用来在网络中标记一台电脑，比如192.168.1.1；在本地局域网上是唯一的。</strong></p>
 <h4 id="ip地址的分类"><a href="#ip地址的分类" class="headerlink" title="ip地址的分类"></a>ip地址的分类</h4><p>每一个IP地址包括两部分：网络地址和主机地址。IP地址通常由点分十进制(例如：192.168.1.1)的方式来表示,IP地址要和子网掩码(用来区分网络位和主机位)配合使用。</p>
-<p><img src="/2023/01/python-jin-jie-pian/ip%E5%9C%B0%E5%9D%80.jpg" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/ip%E5%9C%B0%E5%9D%80.jpg" alt="img"></p>
 <h4 id="A类地址"><a href="#A类地址" class="headerlink" title="A类地址"></a>A类地址</h4><p>一个A类IP地址由1字节的网络地址和3字节主机地址组成，网络地址的最高位必须是“0”，</p>
 <p>地址范围：1.0.0.1-126.255.255.254</p>
 <p>子网掩码：255.0.0.0</p>
@@ -2180,14 +2180,14 @@ num <span class="token operator">=</span> re<span class="token punctuation">.</s
 <li>IP地址中不能以十进制“127”作为开头，该类地址中数字127．0．0．1到127．255．255．255用于回路测试，如：127.0.0.1可以代表本机IP地址，用 <code>http://127.0.0.1</code> 就可以测试本机中配置的Web服务器</li>
 <li>网络ID的第一个8位组也不能全置为“0”，全“0”表示本地网络。</li>
 </ol>
-<h3 id="网络通信方式"><a href="#网络通信方式" class="headerlink" title="网络通信方式"></a>网络通信方式</h3><h4 id="直接通信"><a href="#直接通信" class="headerlink" title="直接通信"></a>直接通信</h4><p><img src="/2023/01/python-jin-jie-pian/QQ20170807-210222@2x.png" alt="img"></p>
+<h3 id="网络通信方式"><a href="#网络通信方式" class="headerlink" title="网络通信方式"></a>网络通信方式</h3><h4 id="直接通信"><a href="#直接通信" class="headerlink" title="直接通信"></a>直接通信</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/QQ20170807-210222@2x.png" alt="img"></p>
 <blockquote>
 <ol>
 <li>如果两台电脑之间通过网线连接是可以直接通信的，但是需要提前设置好ip地址以及网络掩码</li>
 <li>并且ip地址需要控制在同一网段内，例如 一台为<code>192.168.1.1</code>另一台为<code>192.168.1.2</code>则可以进行通信</li>
 </ol>
 </blockquote>
-<h4 id="使用集线器通信"><a href="#使用集线器通信" class="headerlink" title="使用集线器通信"></a>使用集线器通信</h4><p><img src="/2023/01/python-jin-jie-pian/QQ20170807-210413@2x.png" alt="img"></p>
+<h4 id="使用集线器通信"><a href="#使用集线器通信" class="headerlink" title="使用集线器通信"></a>使用集线器通信</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/QQ20170807-210413@2x.png" alt="img"></p>
 <blockquote>
 <ol>
 <li>当有多态电脑需要组成一个网时，那么可以通过集线器（Hub）将其链接在一起</li>
@@ -2195,7 +2195,7 @@ num <span class="token operator">=</span> re<span class="token punctuation">.</s
 <li>集线器有个缺点，它以广播的方式进行发送任何数据，即如果集线器接收到来自A电脑的数据本来是想转发给B电脑，如果此时它还连接着另外两台电脑C、D，那么它会把这个数据给每个电脑都发送一份，因此会导致网络拥堵</li>
 </ol>
 </blockquote>
-<h4 id="使用交换机通信"><a href="#使用交换机通信" class="headerlink" title="使用交换机通信"></a>使用交换机通信</h4><p><img src="/2023/01/python-jin-jie-pian/QQ20170807-211152@2x.png" alt="img"></p>
+<h4 id="使用交换机通信"><a href="#使用交换机通信" class="headerlink" title="使用交换机通信"></a>使用交换机通信</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/QQ20170807-211152@2x.png" alt="img"></p>
 <blockquote>
 <ol>
 <li>克服了集线器以广播发送数据的缺点，当需要广播的时候发送广播，当需要单播的时候又能够以单播的方式进行发送</li>
@@ -2203,8 +2203,8 @@ num <span class="token operator">=</span> re<span class="token punctuation">.</s
 <li>企业中就是用交换机来完成多态电脑设备的链接成网络的</li>
 </ol>
 </blockquote>
-<h4 id="使用路由器连接多个网络"><a href="#使用路由器连接多个网络" class="headerlink" title="使用路由器连接多个网络"></a>使用路由器连接多个网络</h4><p><img src="/2023/01/python-jin-jie-pian/QQ20170807-211021@2x.png" alt="img"></p>
-<h4 id="复杂的通信过程"><a href="#复杂的通信过程" class="headerlink" title="复杂的通信过程"></a>复杂的通信过程</h4><p><img src="/2023/01/python-jin-jie-pian/QQ20170807-212411@2x.png" alt="img"></p>
+<h4 id="使用路由器连接多个网络"><a href="#使用路由器连接多个网络" class="headerlink" title="使用路由器连接多个网络"></a>使用路由器连接多个网络</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/QQ20170807-211021@2x.png" alt="img"></p>
+<h4 id="复杂的通信过程"><a href="#复杂的通信过程" class="headerlink" title="复杂的通信过程"></a>复杂的通信过程</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/QQ20170807-212411@2x.png" alt="img"></p>
 <blockquote>
 <ol>
 <li>在浏览器中输入一个网址时，需要将它先解析出ip地址来</li>
@@ -2280,7 +2280,7 @@ s<span class="token punctuation">.</span>close<span class="token punctuation">(<
 <li>关闭套接字</li>
 </ol>
 <h3 id="UDP协议"><a href="#UDP协议" class="headerlink" title="UDP协议"></a>UDP协议</h3><p>UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议。在通信开始之前，不需要建立相关的链接，只需要发送数据即可，类似于生活中，”写信”。</p>
-<h4 id="UDP通信模型"><a href="#UDP通信模型" class="headerlink" title="UDP通信模型"></a>UDP通信模型</h4><p><img src="/2023/01/python-jin-jie-pian/udpSocket.jpg" alt="img"></p>
+<h4 id="UDP通信模型"><a href="#UDP通信模型" class="headerlink" title="UDP通信模型"></a>UDP通信模型</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/udpSocket.jpg" alt="img"></p>
 <h4 id="udp网络程序-发送数据"><a href="#udp网络程序-发送数据" class="headerlink" title="udp网络程序-发送数据"></a>udp网络程序-发送数据</h4><p>创建一个基于udp的网络程序流程很简单，具体步骤如下：</p>
 <ol>
 <li>创建客户端套接字</li>
@@ -2308,14 +2308,14 @@ recv_data <span class="token operator">=</span> udp_socket<span class="token pun
 <span class="token comment"># 7. 关闭socket连接</span>
 udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2023/01/python-jin-jie-pian/UDPsocket.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/UDPsocket.png" alt="img"></p>
 <p>运行网络调试助手，查看运行效果：</p>
-<p><img src="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B1.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B1.png" alt="img"></p>
 <h4 id="udp网络程序-端口问题"><a href="#udp网络程序-端口问题" class="headerlink" title="udp网络程序-端口问题"></a>udp网络程序-端口问题</h4><ul>
 <li>会变的端口号</li>
 </ul>
 <p>重新运行多次脚本，然后在“网络调试助手”中，看到的现象如下：</p>
-<p><img src="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B2.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B2.png" alt="img"></p>
 <p>说明：</p>
 <ul>
 <li>每重新运行一次网络程序，上图中红圈中的数字，不一样的原因在于，这个数字标识这个网络程序，当重新运行时，如果没有确定到底用哪个，系统默认会随机分配</li>
@@ -2341,7 +2341,7 @@ recv_data <span class="token operator">=</span> udp_socket<span class="token pun
 udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>运行结果：</p>
-<p><img src="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B3.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B3.png" alt="img"></p>
 <ul>
 <li>一个udp网络程序，可以不绑定，此时操作系统会随机进行分配一个端口，如果重新运行此程序端口可能会发生变化</li>
 <li>一个udp网络程序，也可以绑定信息（ip地址，端口号），如果绑定成功，那么操作系统用这个端口号来进行区别收到的网络数据是否是此进程的</li>
@@ -2373,9 +2373,9 @@ udp_socket<span class="token punctuation">.</span>close<span class="token punctu
 <li>阻塞/流量控制</li>
 </ul>
 <h4 id="TCP通信模型"><a href="#TCP通信模型" class="headerlink" title="TCP通信模型"></a>TCP通信模型</h4><p>TCP通信模型中，在通信开始之前，一定要先建立相关的链接，才能发送数据</p>
-<p><img src="/2023/01/python-jin-jie-pian/TCP%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/TCP%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.png" alt="img"></p>
 <h4 id="服务器和客户端"><a href="#服务器和客户端" class="headerlink" title="服务器和客户端"></a>服务器和客户端</h4><p>服务器，也称私服器，是提供计算服务的设备。由于服务器需要响应服务请求，并进行处理，因此一般来说服务器应具备承担服务并且保障服务的能力。 客户端（Client）也被称为用户端，是指与服务器相对应，为客户提供本地服务的程序。 客户端服务器架构又被称为主从式架构，简称C/S结构，是一种网络架构，它把客户端与服务器分开来，一个客户端软件的实例都可以向一个服务器或应用程序服务器发出请求。</p>
-<p><img src="/2023/01/python-jin-jie-pian/cs%E6%9E%B6%E6%9E%84.jpg" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/cs%E6%9E%B6%E6%9E%84.jpg" alt="img"></p>
 <h5 id="TCP客户端"><a href="#TCP客户端" class="headerlink" title="TCP客户端"></a>TCP客户端</h5><p>相比较于TCP服务端，tcp的客户端要简单很多，如果说服务器端是需要自己买手机、查手机卡、设置铃声、等待别人打电话流程的话，那么客户端就只需要找一个电话亭，拿起电话拨打即可，流程要少很多。</p>
 <p>示例代码:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> socket <span class="token keyword">import</span> <span class="token operator">*</span>
@@ -2407,7 +2407,7 @@ tcp_client_socket<span class="token punctuation">.</span>close<span class="token
 请输入要发送的数据：你好啊
 接收到的数据为<span class="token punctuation">:</span> 我很好，你呢<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2023/01/python-jin-jie-pian/TCPclient%E8%B0%83%E8%AF%95.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/TCPclient%E8%B0%83%E8%AF%95.png" alt="img"></p>
 <h5 id="TCP服务端"><a href="#TCP服务端" class="headerlink" title="TCP服务端"></a>TCP服务端</h5><p>在程序中，如果想要完成一个tcp服务器的功能，需要的流程如下：</p>
 <ol>
 <li>socket创建一个套接字</li>
@@ -3074,10 +3074,10 @@ reader从Queue获取到消息：d
 <li>Network显示浏览器和服务器的通信</li>
 </ul>
 <p>我们点Network，确保第一个小红灯亮着，Chrome就会记录所有浏览器和服务器之间的通信：</p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_2.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_2.png" alt="img"></p>
 <h3 id="2-http协议的分析"><a href="#2-http协议的分析" class="headerlink" title="2. http协议的分析"></a>2. http协议的分析</h3><p>当我们在地址栏输入<a href="http://www.sina.com时，浏览器将显示新浪的首页。在这个过程中，浏览器都干了哪些事情呢？通过Network的记录，我们就可以知道。在Network中，找到www.sina.com那条记录，点击，右侧将显示Request">www.sina.com时，浏览器将显示新浪的首页。在这个过程中，浏览器都干了哪些事情呢？通过Network的记录，我们就可以知道。在Network中，找到www.sina.com那条记录，点击，右侧将显示Request</a> Headers，点击右侧的view source，我们就可以看到浏览器发给新浪服务器的请求：</p>
-<h4 id="2-1-浏览器请求"><a href="#2-1-浏览器请求" class="headerlink" title="2.1 浏览器请求"></a>2.1 浏览器请求</h4><p><img src="/2023/01/python-jin-jie-pian/Snip20160908_3.png" alt="img"></p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_5.png" alt="img"></p>
+<h4 id="2-1-浏览器请求"><a href="#2-1-浏览器请求" class="headerlink" title="2.1 浏览器请求"></a>2.1 浏览器请求</h4><p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_3.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_5.png" alt="img"></p>
 <h5 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h5><p>最主要的头两行分析如下，第一行：</p>
 <pre class="line-numbers language-none"><code class="language-none">GET / HTTP/1.1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -3087,7 +3087,7 @@ reader从Queue获取到消息：d
 
 <p>表示请求的域名是<a target="_blank" rel="noopener" href="http://www.sina.com.如果一台服务器有多个网站,服务器就需要通过host来区分浏览器请求的是哪个网站./">www.sina.com。如果一台服务器有多个网站，服务器就需要通过Host来区分浏览器请求的是哪个网站。</a></p>
 <h4 id="2-2-服务器响应"><a href="#2-2-服务器响应" class="headerlink" title="2.2 服务器响应"></a>2.2 服务器响应</h4><p>继续往下找到Response Headers，点击view source，显示服务器返回的原始响应数据：</p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_6.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_6.png" alt="img"></p>
 <p>HTTP响应分为Header和Body两部分（Body是可选项），我们在Network中看到的Header最重要的几行如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">HTTP/1.1 200 OK<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -3105,11 +3105,11 @@ reader从Queue获取到消息：d
 <p>请注意，浏览器就是依靠Content-Type来判断响应的内容是网页还是图片，是视频还是音乐。浏览器并不靠URL来判断响应的内容，所以，即使URL是<code>http://www.baidu.com/meimei.jpg</code>，它也不一定就是图片。</p>
 </blockquote>
 <p>HTTP响应的Body就是HTML源码，我们在菜单栏选择“视图”，“开发者”，“查看网页源码”就可以在浏览器中直接查看HTML源码：</p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_7.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_7.png" alt="img"></p>
 <h5 id="浏览器解析过程"><a href="#浏览器解析过程" class="headerlink" title="浏览器解析过程"></a>浏览器解析过程</h5><blockquote>
 <p><strong>当浏览器读取到新浪首页的HTML源码后，它会解析HTML，显示页面，然后，根据HTML里面的各种链接，再发送HTTP请求给新浪服务器，拿到相应的图片、视频、Flash、JavaScript脚本、CSS等各种资源，最终显示出一个完整的页面。所以我们在Network下面能看到很多额外的HTTP请求。</strong></p>
 </blockquote>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_8.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_8.png" alt="img"></p>
 <h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h3><h4 id="3-1-HTTP请求"><a href="#3-1-HTTP请求" class="headerlink" title="3.1 HTTP请求"></a>3.1 HTTP请求</h4><p>跟踪了新浪的首页，我们来总结一下HTTP请求的流程：</p>
 <h5 id="3-1-1-步骤1：浏览器首先向服务器发送HTTP请求，请求包括："><a href="#3-1-1-步骤1：浏览器首先向服务器发送HTTP请求，请求包括：" class="headerlink" title="3.1.1 步骤1：浏览器首先向服务器发送HTTP请求，请求包括："></a>3.1.1 步骤1：浏览器首先向服务器发送HTTP请求，请求包括：</h5><blockquote>
 <p>方法：GET还是POST，GET仅请求资源，POST会附带用户数据；</p>
@@ -3128,7 +3128,7 @@ reader从Queue获取到消息：d
 <p>Web采用的HTTP协议采用了非常简单的请求-响应模式，从而大大简化了开发。当我们编写一个页面时，我们只需要在HTTP请求中把HTML发送出去，不需要考虑如何附带图片、视频等，浏览器如果需要请求图片和视频，它会发送另一个HTTP请求，因此，一个HTTP请求只处理一个资源(此时就可以理解为TCP协议中的短连接，每个链接只获取一个资源，如需要多个就需要建立多个链接)</p>
 </blockquote>
 <p>HTTP协议同时具备极强的扩展性，虽然浏览器请求的是<code>http://www.sina.com</code>的首页，但是新浪在HTML中可以链入其他服务器的资源，比如<code>&lt;img src="http://i1.sinaimg.cn/home/2013/1008/U8455P30DT20131008135420.png"&gt;</code>，从而将请求压力分散到各个服务器上，并且，一个站点可以链接到其他站点，无数个站点互相链接起来，就形成了World Wide Web，简称WWW。</p>
-<p><img src="/2023/01/python-jin-jie-pian/Snip20160908_9.png" alt="img"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/python-jin-jie-pian/Snip20160908_9.png" alt="img"></p>
 <h4 id="3-2-HTTP格式"><a href="#3-2-HTTP格式" class="headerlink" title="3.2 HTTP格式"></a>3.2 HTTP格式</h4><p>每个HTTP请求和响应都遵循相同的格式，一个HTTP包含Header和Body两部分，其中Body是可选的。</p>
 <p>HTTP协议是一种文本协议，所以，它的格式也非常简单。</p>
 <h5 id="3-2-1-HTTP-GET请求的格式："><a href="#3-2-1-HTTP-GET请求的格式：" class="headerlink" title="3.2.1 HTTP GET请求的格式："></a>3.2.1 HTTP GET请求的格式：</h5><pre class="line-numbers language-none"><code class="language-none">GET /path HTTP/1.1
@@ -3951,7 +3951,7 @@ json <span class="token operator">=</span> response<span class="token punctuatio
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -4242,6 +4242,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>

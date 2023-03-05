@@ -675,7 +675,7 @@
 
 <h4 id="切换到Root"><a href="#切换到Root" class="headerlink" title="切换到Root"></a>切换到Root</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">su</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="设置允许远程登录Root"><a href="#设置允许远程登录Root" class="headerlink" title="设置允许远程登录Root"></a>设置允许远程登录Root</h4><p><img src="/2023/01/linux-chang-yong-ming-ling/image-20230115205107107.png" alt="image-20230115205107107"></p>
+<h4 id="设置允许远程登录Root"><a href="#设置允许远程登录Root" class="headerlink" title="设置允许远程登录Root"></a>设置允许远程登录Root</h4><p><img src="/medias/loading.gif" data-original="/2023/01/linux-chang-yong-ming-ling/image-20230115205107107.png" alt="image-20230115205107107"></p>
 <h3 id="用户账户说明"><a href="#用户账户说明" class="headerlink" title="用户账户说明"></a>用户账户说明</h3><h4 id="普通用户"><a href="#普通用户" class="headerlink" title="普通用户"></a>普通用户</h4><p>普通用户在系统上的任务是进行普通操作</p>
 <h4 id="超级管理员"><a href="#超级管理员" class="headerlink" title="超级管理员"></a>超级管理员</h4><p>管理员在系统上的任务是对普通用户和整个系统进行管理。对系统具有绝对的控制权，能够对系统进行一切操作。用root表示, root用户在系统中拥有最高权限，默认下 Ubuntu用户的 root 用户是不能登录的。</p>
 <h4 id="安装时创建的系统用户"><a href="#安装时创建的系统用户" class="headerlink" title="安装时创建的系统用户"></a>安装时创建的系统用户</h4><p>此用户创建时被添加到admin组中，在Ubuntu中 , admin组中的用户默认是可以使用<code>sudo</code>命令来执行只有管理员才能执行的命令的，如果不使用<code>sudo</code>就是一个普通用户。</p>
@@ -916,7 +916,7 @@
 </ul>
 <h4 id="mode"><a href="#mode" class="headerlink" title="mode"></a>mode</h4><p>表示可执行的权限，可以<code>r</code>、<code>w</code>、<code>x</code></p>
 <h4 id="文件名"><a href="#文件名" class="headerlink" title="文件名"></a>文件名</h4><p>文件名可以使空格分开的文件列表</p>
-<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p><img src="/2023/01/linux-chang-yong-ming-ling/image-20230115203249632.png" alt="image-20230115203249632"></p>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p><img src="/medias/loading.gif" data-original="/2023/01/linux-chang-yong-ming-ling/image-20230115203249632.png" alt="image-20230115203249632"></p>
 <h4 id="数字设定法"><a href="#数字设定法" class="headerlink" title="数字设定法"></a>数字设定法</h4><p>数字设定法中数字表示的含义</p>
 <ul>
 <li>0 表示没有任何权限</li>
@@ -947,7 +947,7 @@
 <p>若要<code>rwx</code>属性则4+2+1=7</p>
 <p>若要<code>rw-</code>属性则4+2=6</p>
 <p>若也要<code>r-x</code>属性则4+1=5</p>
-<p><img src="/2023/01/linux-chang-yong-ming-ling/image-20230115204024867.png" alt="image-20230115204024867"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/linux-chang-yong-ming-ling/image-20230115204024867.png" alt="image-20230115204024867"></p>
 <h2 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h2><table>
 <thead>
 <tr>
@@ -1764,7 +1764,7 @@ deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe m
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -2055,6 +2055,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>

@@ -676,7 +676,7 @@
 <h3 id="（二）Spring-概述"><a href="#（二）Spring-概述" class="headerlink" title="（二）Spring 概述"></a>（二）Spring 概述</h3><p>Spring 框架是一个轻量级的企业级开发的一站式解决方案。所谓解决方案就是可以基于 Spring 解决 JavaEE 开发的所有问题。Spring 框架主要提供了<code>IoC</code>容器、AOP、数据访问、Web 开发、消息、测试等相关技术的支持。</p>
 <p>Spring 使用简单的 POJO（<code>Plain Old Java Object</code>，即无任何限制的普通Java对象）来进行企业级开发。每一个被 Spring 管理的 Java 对象都被称之为 Bean；而 Spring 提供了一个 IoC 容器用来初始化对象，解决对象间的依赖管理和对象的使用。</p>
 <h4 id="1-Spring-的模块"><a href="#1-Spring-的模块" class="headerlink" title="1. Spring 的模块"></a>1. Spring 的模块</h4><p>Spring 是模块化的，这意味着你可以只使用你需要的Spring的模块。如下图所示：</p>
-<p><img src="/2023/01/spring-ji-chu-nei-rong/spring-moudle.png" alt="Spring 模块"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/spring-ji-chu-nei-rong/spring-moudle.png" alt="Spring 模块"></p>
 <p>图中的每个最小单元，Spring 都至少有一个对应的 jar 包。</p>
 <h5 id="（1）核心容器（Core-Contariner）"><a href="#（1）核心容器（Core-Contariner）" class="headerlink" title="（1）核心容器（Core Contariner）"></a>（1）核心容器（Core Contariner）</h5><ul>
 <li>Spring-Core：核心工具类，Spring 其他模块大量使用 Spring-Core</li>
@@ -731,7 +731,7 @@
 
 <p>其中<code>-DgroupId=com.blinkfox</code>是组织名，<code>-DartifactId=springdemo</code>是该组织下的项目名称，<code>-DarchetypeArtifactId=maven-archetype-webapp</code>代表创建一个简单的 webapp 项目。</p>
 <p>创建项目的时候，Maven会自动下载一些需要用到的 jar 包和 Maven 插件。如果顺利创建成功的话，就会在你的当前目录下看到名为 springdemo 的项目，其中包含<code>src</code>的文件夹和<code>pom.xml</code>文件。且在你的终端会看到如下输出：</p>
-<p><img src="/2023/01/spring-ji-chu-nei-rong/maven-build-project.png" alt="Maven创建项目成功"></p>
+<p><img src="/medias/loading.gif" data-original="/2023/01/spring-ji-chu-nei-rong/maven-build-project.png" alt="Maven创建项目成功"></p>
 <h3 id="（三）添加-Spring-依赖"><a href="#（三）添加-Spring-依赖" class="headerlink" title="（三）添加 Spring 依赖"></a>（三）添加 Spring 依赖</h3><p>接下来需要通过修改 pom.xml 来添加 Spring 的依赖，添加编译插件，且将编译级别设置为1.8，pom.xml文件的修改如下：</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>project</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://maven.apache.org/POM/4.0.0<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>modelVersion</span><span class="token punctuation">&gt;</span></span>4.0.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>modelVersion</span><span class="token punctuation">&gt;</span></span>
@@ -1701,7 +1701,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">263.5k</span>&nbsp;字
+                class="white-color">264.1k</span>&nbsp;字
             
             
             
@@ -1992,6 +1992,19 @@ $(function () {
 
     
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(a){a.imageLazyLoadSetting.processImages=t;var i=a.imageLazyLoadSetting.isSPA,o=a.imageLazyLoadSetting.preloadRatio||1,r=c();function c(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){i&&(r=c());for(var t,e,n=0;n<r.length;n++)t=r[n],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(a.innerHeight*o||document.documentElement.clientHeight*o)&&function(){var e=r[n];!function(t,e){if(t.hasAttribute("bg-lazy"))return t.removeAttribute("bg-lazy"),e&&e();var n=new Image,a=t.getAttribute("data-original");n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a)}(e,function(){r=r.filter(function(t){return e!==t}),a.imageLazyLoadSetting.onImageLoaded&&a.imageLazyLoadSetting.onImageLoaded(e)})}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),a.addEventListener("resize",e),a.addEventListener("orientationchange",e)}(this);</script></body>
 
 </html>
